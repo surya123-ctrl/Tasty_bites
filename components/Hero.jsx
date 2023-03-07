@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/Image";
 import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
 import HeroImage from "../assets/HeroImage.png";
@@ -12,7 +12,7 @@ const Hero = () => {
       <div className={css.left}>
         <div className={css.cherryDiv}>
           <span>More than Faster</span>
-          <Image src={Cherry} alt="cherry" width={40} height={25} />
+          <Image priority src={Cherry} alt="cherry" width={40} height={25} />
         </div>
         <div className={css.heroText}>
           <span>Be the Fastest</span>
@@ -30,8 +30,13 @@ const Hero = () => {
       </div>
       {/* right */}
       <div className={css.rightSide}>
-        <div className={css.imageContainer}>
-          <Image src={HeroImage} alt="HeroImage" layout="intrinsic" />
+        <div className={css.ImageContainer}>
+          <Image
+            priority
+            src={HeroImage}
+            alt="HeroImage priority"
+            layout="intrinsic"
+          />
         </div>
         <div className={css.contactUs}>
           <span>Contact Us</span>
@@ -42,6 +47,7 @@ const Hero = () => {
         <div className={css.pizza}>
           <div>
             <Image
+              priority
               src={Pizza1}
               alt="pizza"
               objectFit="cover"
