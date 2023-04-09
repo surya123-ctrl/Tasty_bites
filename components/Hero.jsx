@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/image"; //
 import css from "../styles/Hero.module.css";
 import Cherry from "../assets/Cherry.png";
 import HeroImage from "../assets/HeroImage.png";
